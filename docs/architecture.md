@@ -34,7 +34,7 @@ The following figures are planning assumptions, not measured production traffic.
 
 - Registered users: 1,000,000.
 - Daily active users: 100,000 (10% of registered users).
-- Each active user performs 20 reads and 2 writes per day.
+- Each active user performs 20 reads and 5 writes per day.
 - Average stored note data: 2 KB per note.
 - Each active user creates 5 new notes per day.
 - A year has 365 days.
@@ -53,11 +53,11 @@ Average reads per second:
 
 Daily writes:
 
-100,000 active users × 2 writes = 200,000 writes per day.
+100,000 active users × 5 writes = 500,000 writes per day.
 
 Average writes per second:
 
-200,000 ÷ 86,400 ≈ 2.3 writes per second.
+500,000 ÷ 86,400 ≈ 5.8 writes per second.
 
 ### Storage Growth per Year
 
@@ -82,7 +82,7 @@ This estimate covers note content only. It excludes indexes, database overhead, 
 | Registered users | 1,000,000 |
 | Daily active users | 100,000 |
 | Reads per second | 23 |
-| Writes per second | 2.3 |
+| Writes per second | 5.8 |
 | New notes per year | 182.5 million |
 | Note storage growth per year | 365 GB |
 
